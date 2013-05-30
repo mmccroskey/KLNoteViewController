@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 //Layout properties
-#define kDefaultMinimizedScalingFactor 0.98     //Amount to shrink each card from the previous one
+#define kDefaultMinimizedScalingFactor 1     //Amount to shrink each card from the previous one
 #define kDefaultMaximizedScalingFactor 1.00     //Maximum a card can be scaled to
 #define kDefaultNavigationBarOverlap 0.90       //Defines vertical overlap of each navigation toolbar. Slight hack that prevents rounding errors from showing the whitespace between navigation toolbars. Can be customized if require more/less packing of navigation toolbars
 
@@ -23,14 +23,14 @@
 #define kDefaultVerticalOrigin 100              //Vertical origin of the controller card stack. Making this value larger/smaller will make the card shift down/up.
 
 //Corner radius properties
-#define kDefaultCornerRadius 5.0
+#define kDefaultCornerRadius 0 //5.0
 
 //Shadow Properties - Note : Disabling shadows greatly improves performance and fluidity of animations
-#define kDefaultShadowEnabled YES
+#define kDefaultShadowEnabled NO
 #define kDefaultShadowColor [UIColor blackColor]
 #define kDefaultShadowOffset CGSizeMake(0, -5)
 #define kDefaultShadowRadius kDefaultCornerRadius
-#define kDefaultShadowOpacity 0.60
+#define kDefaultShadowOpacity 0.30
 
 //Gesture properties
 #define kDefaultMinimumPressDuration 0.2

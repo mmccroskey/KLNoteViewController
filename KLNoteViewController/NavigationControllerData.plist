@@ -3,34 +3,150 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>image</key>
-		<string>premium-header-mid-skinny.png</string>
 		<key>title</key>
-		<string>Go Premium</string>
+		<string>Before You Go</string>
+		<key>red</key>
+		<integer>1</integer>
+		<key>green</key>
+		<real>0.9411764706</real>
+		<key>blue</key>
+		<real>0.4274509804</real>
+		<key>icon_name</key>
+		<string>LP_UI_alert</string>
+		<key>background_image_name</key>
+		<string>yellow_bar_background</string>
+		<key>text_color_red</key>
+		<real>0.23</real>
+		<key>text_color_green</key>
+		<real>0.27</real>
+		<key>text_color_blue</key>
+		<real>0.31</real>
 	</dict>
 	<dict>
-		<key>image</key>
-		<string>bar-mid.png</string>
 		<key>title</key>
-		<string>Places</string>
+		<string>Chatting &amp; Basics</string>
+		<key>red</key>
+		<real>0.9803921569</real>
+		<key>green</key>
+		<real>0.368627451</real>
+		<key>blue</key>
+		<real>0.3568627451</real>
+		<key>background_image_name</key>
+		<string>red_bar_background</string>
+		<key>icon_name</key>
+		<string>LP_UI_comment_light</string>
 	</dict>
 	<dict>
-		<key>image</key>
-		<string>bar-mid.png</string>
 		<key>title</key>
-		<string>Tags</string>
+		<string>Airport &amp; Transport</string>
+		<key>red</key>
+		<real>0.0862745098</real>
+		<key>green</key>
+		<real>0.7882352941</real>
+		<key>blue</key>
+		<real>0.5529411765</real>
+		<key>icon_name</key>
+		<string>LP_UI_flight_light</string>
+		<key>background_image_name</key>
+		<string>light_green_bar_background01</string>
 	</dict>
 	<dict>
-		<key>image</key>
-		<string>bar-mid.png</string>
 		<key>title</key>
-		<string>Notebooks</string>
+		<string>Accommodation</string>
+		<key>red</key>
+		<real>0.7490196078</real>
+		<key>green</key>
+		<real>0.3254901961</real>
+		<key>blue</key>
+		<real>0.5529411765</real>
+		<key>icon_name</key>
+		<string>LP_UI_hotels_light</string>
+		<key>background_image_name</key>
+		<string>purple_bar_background</string>
 	</dict>
 	<dict>
-		<key>image</key>
-		<string>bar-mid.png</string>
 		<key>title</key>
-		<string>All Notes</string>
+		<string>Eating &amp; Drinking</string>
+		<key>red</key>
+		<real>0.0705882353</real>
+		<key>green</key>
+		<real>0.862745098</real>
+		<key>blue</key>
+		<real>0.8</real>
+		<key>icon_name</key>
+		<string>LP_UI_dining_light</string>
+		<key>background_image_name</key>
+		<string>teal_bar_background</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Sightseeing</string>
+		<key>red</key>
+		<real>0.7803921569</real>
+		<key>green</key>
+		<real>0.9019607843</real>
+		<key>blue</key>
+		<real>0.6666666667</real>
+		<key>icon_name</key>
+		<string>LP_UI_sight_light</string>
+		<key>background_image_name</key>
+		<string>green_bar_background</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Shopping</string>
+		<key>red</key>
+		<real>0.1254901961</real>
+		<key>green</key>
+		<real>0.3725490196</real>
+		<key>blue</key>
+		<real>0.6745098039</real>
+		<key>icon_name</key>
+		<string>LP_UI_shopping_light</string>
+		<key>background_image_name</key>
+		<string>blue_bar_background</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Entertainment</string>
+		<key>red</key>
+		<integer>1</integer>
+		<key>green</key>
+		<real>0.7843137255</real>
+		<key>blue</key>
+		<real>0.2470588235</real>
+		<key>icon_name</key>
+		<string>LP_UI_entertainment_light</string>
+		<key>background_image_name</key>
+		<string>orange_bar_background</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Practicalities</string>
+		<key>red</key>
+		<real>0.4078431373</real>
+		<key>green</key>
+		<real>0.3058823529</real>
+		<key>blue</key>
+		<real>0.4745098039</real>
+		<key>icon_name</key>
+		<string>LP_UI_info_light</string>
+		<key>background_image_name</key>
+		<string>dark_purple_bar_background</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Dictionary</string>
+		<key>red</key>
+		<real>0.8117647059</real>
+		<key>green</key>
+		<real>0.7960784314</real>
+		<key>blue</key>
+		<real>0.6862745098</real>
+		<key>icon_name</key>
+		<string>LP_UI_settings_light</string>
+		<key>background_image_name</key>
+		<string>taupe_bar_background</string>
 	</dict>
 </array>
 </plist>
