@@ -103,6 +103,8 @@ typedef UInt32 KLControllerCardPanGestureScope;
 //Repopulates all data for the controllerCards array
 -(void) reloadData;
 -(void) reloadDataAnimated:(BOOL) animated;
+- (void)hideCardsAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completionBlock;
+- (void)showCardsAnimated:(BOOL)animated;
 
 //Helpers for getting information about the controller cards
 -(NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView;

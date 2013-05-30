@@ -20,7 +20,7 @@
 #define kDefaultReloadShowAnimationDuration 0.6
 
 //Position for the stack of navigation controllers to originate at
-#define kDefaultVerticalOrigin 100              //Vertical origin of the controller card stack. Making this value larger/smaller will make the card shift down/up.
+#define kDefaultVerticalOrigin 60              //Vertical origin of the controller card stack. Making this value larger/smaller will make the card shift down/up.
 
 //Corner radius properties
 #define kDefaultCornerRadius 0 //5.0
@@ -169,27 +169,38 @@
 }
 - (void) reloadDataAnimated:(BOOL) animated {
     if (animated) {
-        [UIView animateWithDuration:self.cardReloadHideAnimationDuration animations:^{
-            for (KLControllerCard* card in self.controllerCards) {
-                [card setState:KLControllerCardStateHiddenBottom animated:NO];
-            }
-        } completion:^(BOOL finished) {
-            [self reloadData];
-            [self reloadInputViews];
-            for (KLControllerCard* card in self.controllerCards) {
-                [card setState:KLControllerCardStateHiddenBottom animated:NO];
-            }
-            [UIView animateWithDuration:self.cardReloadShowAnimationDuration animations:^{
-                for (KLControllerCard* card in self.controllerCards) {
-                    [card setState:KLControllerCardStateDefault animated:NO];
-                }
-            }];
+        [self hideCardsAnimated:animated completion:^(BOOL finished){
+            [self showCardsAnimated:animated];
         }];
     }
     else   {
         [self reloadData];
     }
 }
+
+- (void)hideCardsAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completionBlock
+{
+    [UIView animateWithDuration:self.cardReloadHideAnimationDuration animations:^{
+        for (KLControllerCard* card in self.controllerCards) {
+            [card setState:KLControllerCardStateHiddenBottom animated:NO];
+        }
+    } completion:completionBlock];
+}
+
+- (void)showCardsAnimated:(BOOL)animated
+{
+    [self reloadData];
+    [self reloadInputViews];
+    for (KLControllerCard* card in self.controllerCards) {
+        [card setState:KLControllerCardStateHiddenBottom animated:NO];
+    }
+    [UIView animateWithDuration:self.cardReloadShowAnimationDuration animations:^{
+        for (KLControllerCard* card in self.controllerCards) {
+            [card setState:KLControllerCardStateDefault animated:NO];
+        }
+    }];
+}
+
 - (void) reloadInputViews {
     [super reloadInputViews];
     

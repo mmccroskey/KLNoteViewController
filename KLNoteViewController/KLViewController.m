@@ -10,6 +10,8 @@
 #import "KLCustomViewController.h"
 @interface KLViewController ()
 
+@property (nonatomic) BOOL cardsAreHidden;
+
 @end
 
 @implementation KLViewController
@@ -65,4 +67,17 @@
     [self reloadDataAnimated:YES];
     
 }
+
+- (IBAction)toggleCardsVisibililty:(id)sender
+{
+    if (self.cardsAreHidden)
+    {
+        // show cards
+    }
+    else
+    {
+        // hide cards
+    }
+}
+
 @end

@@ -11,5 +11,6 @@
 
 @interface KLViewController : KLNoteViewController
 - (IBAction)reloadCardData:(id)sender;
+- (IBAction)toggleCardsVisibililty:(id)sender;
 @property (nonatomic, strong) NSArray* viewControllerData;
 @end
