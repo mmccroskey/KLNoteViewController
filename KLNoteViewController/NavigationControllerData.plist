@@ -12,7 +12,7 @@
 		<key>blue</key>
 		<real>0.4274509804</real>
 		<key>icon_name</key>
-		<string>LP_UI_alert</string>
+		<string>LP_UI_activity</string>
 		<key>background_image_name</key>
 		<string>yellow_bar_background</string>
 		<key>text_color_red</key>
@@ -144,7 +144,7 @@
 		<key>blue</key>
 		<real>0.6862745098</real>
 		<key>icon_name</key>
-		<string>LP_UI_settings_light</string>
+		<string>LP_UI_book_light</string>
 		<key>background_image_name</key>
 		<string>taupe_bar_background</string>
 	</dict>
