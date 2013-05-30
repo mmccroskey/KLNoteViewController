@@ -40,9 +40,13 @@
         UIFont *fontForLabel = [UIFont fontWithName:@"OpenSans-Semibold" size:20];
         
         UIImageView *iconView = [[UIImageView alloc] initWithImage:icon];
+        [iconView setContentMode:UIViewContentModeScaleAspectFit];
+        CGFloat sizeAdjustment = 0.8;
+        [iconView setFrame:CGRectMake(CGRectGetMinX(iconView.frame), CGRectGetMinY(iconView.frame), (CGRectGetWidth(iconView.frame)*sizeAdjustment), (CGRectGetHeight(iconView.frame)*sizeAdjustment))];
         CGSize textSize = [title sizeWithFont:fontForLabel];
         CGFloat requisiteHeight = textSize.height > iconView.frame.size.height ? textSize.height : iconView.frame.size.height;
         CGFloat requisiteWidth  = iconView.frame.size.width + textSize.width + spacingBetweenIconViewAndTitleLabel;
+        [iconView setFrame:CGRectMake(CGRectGetMinX(iconView.frame), ((requisiteHeight-CGRectGetHeight(iconView.frame))/2), CGRectGetWidth(iconView.frame), CGRectGetHeight(iconView.frame))];
         
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake((iconView.frame.size.width+spacingBetweenIconViewAndTitleLabel), ((requisiteHeight-textSize.height)/2), textSize.width, textSize.height)];
         [titleLabel setFont:fontForLabel];
